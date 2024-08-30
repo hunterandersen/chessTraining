@@ -1,0 +1,9 @@
+{
+  "fen": "3r4/6k1/2bPR3/pp3p2/2B2P1p/P7/1P3KP1/8 w - -",
+  "eval": {
+    "cp": 337,
+    "line": "c4a2 c6d7 e6e7 g7f6 f2g1 d7c8 e7f7 f6g6 f7c7 g6h5",
+    "knodes": 138760,
+    "depth": 28
+  }
+}
