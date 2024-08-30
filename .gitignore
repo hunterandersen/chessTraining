@@ -1,3 +1,4 @@
 lichess_db_eval.jsonl
 lichess_db_noMateNorZero.jsonl
 lichess_db_paredDown.jsonl
+node_modules
