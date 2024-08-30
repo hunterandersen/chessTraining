@@ -2,11 +2,11 @@ const mysql = require("mysql2");
 const config = require("./config");
 
 const connection = mysql.createPool({
-    MYSQLDATABASE: config.MYSQLDATABASE,
-    MYSQLHOST: config.MYSQLHOST,
-    MYSQLPASSWORD: config.MYSQLPASSWORD,
-    MYSQLPORT: config.MYSQLPORT,
-    MYSQLUSER: config.MYSQLUSER,
+    database: config.MYSQLDATABASE,
+    host: config.MYSQLHOST,
+    password: config.MYSQLPASSWORD,
+    port: config.MYSQLPORT,
+    user: config.MYSQLUSER,
 });
 
 function query(queryStr, values) {
