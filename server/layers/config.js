@@ -9,11 +9,13 @@ if (result.error) {
 const parsedKeys = Object.keys(result.parsed);
 
 const requiredKeys = [
+    "PORT",
     "MYSQLDATABASE",
     "MYSQLHOST",
     "MYSQLPASSWORD",
     "MYSQLPORT",
     "MYSQLUSER",
+    "RAILWAYURI"
 ]
 
 if (!requiredKeys.every((key) => parsedKeys.includes(key))){
@@ -21,5 +23,11 @@ if (!requiredKeys.every((key) => parsedKeys.includes(key))){
 }
 
 module.exports = {
-    PORT: process.env.PORT
+    PORT: process.env.PORT,
+    MYSQLDATABASE: process.env.MYSQLDATABASE,
+    MYSQLHOST: process.env.MYSQLHOST,
+    MYSQLPASSWORD: process.env.MYSQLPASSWORD,
+    MYSQLPORT: process.env.MYSQLPORT,
+    MYSQLUSER: process.env.MYSQLUSER,
+    RAILWAYURI: process.env.RAILWAYURI
 }
